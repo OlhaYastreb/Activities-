@@ -33,7 +33,7 @@ border-bottom-right-radius: 7px;
     margin: 20px;
 }
 
-.button{
+.button {
 display: inline-block;
 padding: 15px;
 margin: 15px;
@@ -42,11 +42,40 @@ text-align: center;
 color: white;
 outline: 1px solid red;
 }
-.darkblue{
-    background-color: #333336;
-    ;
+.dark-blue{
+    background-color: #333366;
 }
 .dark-grey{
 background-color: #545454;
+}
+.light-grey{
+    background-color: #E3E3E3;
+}
+.white{
+    background-color: #ffffff;
+}
+.light-blue{
+    background-color: #13A0F6;
+}
+.dark-blue{
+    background-color: #333366;
+}
+.darkGrey{
+    background: #545454;
+}
+.red{
+    background-color: #F84848;
+}
+.orange{
+    background-color: #FC7705;
+}
+.lightBlue{
+    background-color:#13A0F6;
+}
+.lightGreen {
+    background-color: #8ABE48;
+}
+
+#typografy{
 
 }
