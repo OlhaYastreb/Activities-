@@ -1,0 +1,16 @@
+.grid-container {
+color: lightblue;
+}
+.grid-container div{
+    background-color: lightcoral;
+    padding: 20px;
+    margin: 10px;
+    grid-template-areas: 'one two' 'one four';
+    grid-template-rows: 25% 50% 25%;
+    grid-column: 10% 90%;
+}
+
+.item1{grid-area: one;}
+.item2{grid-area: two;}
+.item3{grid-area: three;}
+.item4{grid-area: four;}

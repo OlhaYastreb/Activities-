@@ -3,14 +3,95 @@ body {
 }
 
 /* Grid CSS */
+#heroGrid{
+  margin: 0px 5%;
+  display: grid;
+  min-height: 500px;
+  min-width: 70vp;
+  grid-template-columns: 75% 25%;
+  grid-template-rows: 75% 25%;
+  grid-template-areas: 
+  'featuredProduct secondaryProduct'
+  'featuredProduct CTA';
+}
+#featuredProduct {grid-area: featuredProduct;
+background-image: url(../images/furniture1.png);
+}
+#secondaryProduct {grid-area: secondaryProduct;
+background-image: url(../images/furniture2.png);
+}
 
-
+#CTA{grid-area: CTA;
+background-image: url(../images/woodbg.png);
+justify-content: space-evenly;
+cursor: pointer;
+}
 /* Category Grid CSS */
 
+.heroGridArea{
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+align-items: center;
+display: flex;
+position: relative;
+}
+#headline{
+  border-bottom: 5px solid #FF6200;
+  background-color: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  top: 150px;
+  right: -40px;
+  z-index: 1;
+  padding: 20px;
 
+}
+.subHeading{
+  text-align: center;
+  border-bottom: 2px solid black;
+  margin: 50px auto;
+}
+
+#categoryGrid{
+  margin: 0px 5%;
+  display: grid;
+  grid-template-rows: 300px 300px 300px;
+  grid-auto-columns: 1fr 1fr 1fr;
+grid-template-areas: 
+'bookcases bedroom patio'
+'couches couches patio'
+'desks desks desks';
+}
+#bookcases{grid-area: bookcases;
+  background-image: url(../images/bookcases.png);
+}
+#bedroom { grid-area: bedroom;
+  background-image: url(../images/beds.png);
+
+}
+#couches{ grid-area: couches;
+  background-image: url(../images/couch.png);
+}
+#patio { grid-area: patio;
+background-image: url(../images/patio.png);
+}
+
+#desks{ grid-area: desks;
+  background-image: url(../images/desks.png);
+}
+.categoryGridArea {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  margin: 5px;}
+  /*padding: 20px;
+  color: white;
+  background-color: rgba(000, 000, 000, 0.8);/
 
 
 /* Navigation CSS */
+
 /* CHECK OUT THIS CODE BELOW IF YOU WANT TO GET A REFRESHER ON FLEX */
 #navBar {
   display: flex;
