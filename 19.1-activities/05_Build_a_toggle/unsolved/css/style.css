@@ -1,0 +1,42 @@
+/* Style your dropdown below! */
+
+#toggle {
+    margin: 0 auto;
+    width: 300px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#toggle p {
+    background-color: orchid;
+    color: white;
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+#toggle img {
+    width: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.rotate {
+    transform: rotate(180deg);
+}
+
+#toggle ul {
+    list-style-type: none;
+    padding-left: 0px;
+    margin-top: 0px;
+    border-left: 1px solid darkgray;
+    border-right: 1px solid darkgray;
+    display: none;
+}
+
+#toggle li {
+    border-bottom: 1px solid darkgray;
+    padding: 10px;
+    cursor: pointer;
+}
