@@ -1,157 +1,182 @@
 body {
-  font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
+
 
 /* Grid CSS */
-#heroGrid{
-  margin: 0px 5%;
-  display: grid;
-  min-height: 500px;
-  min-width: 70vp;
-  grid-template-columns: 75% 25%;
-  grid-template-rows: 75% 25%;
-  grid-template-areas: 
-  'featuredProduct secondaryProduct'
-  'featuredProduct CTA';
-}
-#featuredProduct {grid-area: featuredProduct;
-background-image: url(../images/furniture1.png);
-}
-#secondaryProduct {grid-area: secondaryProduct;
-background-image: url(../images/furniture2.png);
+
+#heroGrid {
+    margin: 0px 5%;
+    display: grid;
+    min-height: 500px;
+    min-width: 70vp;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: 75% 25%;
+    grid-template-areas: 'featuredProduct secondaryProduct' 'featuredProduct CTA';
 }
 
-#CTA{grid-area: CTA;
-background-image: url(../images/woodbg.png);
-justify-content: space-evenly;
-cursor: pointer;
+#featuredProduct {
+    grid-area: featuredProduct;
+    background-image: url(../images/furniture1.png);
 }
+
+#secondaryProduct {
+    grid-area: secondaryProduct;
+    background-image: url(../images/furniture2.png);
+}
+
+#CTA {
+    grid-area: CTA;
+    background-image: url(../images/woodbg.png);
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+
+
 /* Category Grid CSS */
 
-.heroGridArea{
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
-align-items: center;
-display: flex;
-position: relative;
-}
-#headline{
-  border-bottom: 5px solid #FF6200;
-  background-color: rgba(255, 255, 255, 0.8);
-  position: absolute;
-  top: 150px;
-  right: -40px;
-  z-index: 1;
-  padding: 20px;
-
-}
-.subHeading{
-  text-align: center;
-  border-bottom: 2px solid black;
-  margin: 50px auto;
+.heroGridArea {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    display: flex;
+    position: relative;
 }
 
-#categoryGrid{
-  margin: 0px 5%;
-  display: grid;
-  grid-template-rows: 300px 300px 300px;
-  grid-auto-columns: 1fr 1fr 1fr;
-grid-template-areas: 
-'bookcases bedroom patio'
-'couches couches patio'
-'desks desks desks';
-}
-#bookcases{grid-area: bookcases;
-  background-image: url(../images/bookcases.png);
-}
-#bedroom { grid-area: bedroom;
-  background-image: url(../images/beds.png);
-
-}
-#couches{ grid-area: couches;
-  background-image: url(../images/couch.png);
-}
-#patio { grid-area: patio;
-background-image: url(../images/patio.png);
+#headline {
+    border-bottom: 5px solid #FF6200;
+    background-color: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    top: 150px;
+    right: -40px;
+    z-index: 1;
+    padding: 20px;
 }
 
-#desks{ grid-area: desks;
-  background-image: url(../images/desks.png);
+.subHeading {
+    text-align: center;
+    border-bottom: 2px solid black;
+    margin: 50px auto;
 }
+
+#categoryGrid {
+    margin: 0px 5%;
+    display: grid;
+    grid-template-rows: 300px 300px 300px;
+    grid-auto-columns: 1fr 1fr 1fr;
+    grid-template-areas: 'bookcases bedroom patio' 'couches couches patio' 'desks desks desks';
+}
+
+#bookcases {
+    grid-area: bookcases;
+    background-image: url(../images/bookcases.png);
+}
+
+#bedroom {
+    grid-area: bedroom;
+    background-image: url(../images/beds.png);
+}
+
+#couches {
+    grid-area: couches;
+    background-image: url(../images/couch.png);
+}
+
+#patio {
+    grid-area: patio;
+    background-image: url(../images/patio.png);
+}
+
+#desks {
+    grid-area: desks;
+    background-image: url(../images/desks.png);
+}
+
 .categoryGridArea {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  cursor: pointer;
-  margin: 5px;}
-  /*padding: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    margin: 5px;
+}
+
+
+/*padding: 20px;
   color: white;
   background-color: rgba(000, 000, 000, 0.8);/
 
 
 /* Navigation CSS */
 
+
 /* CHECK OUT THIS CODE BELOW IF YOU WANT TO GET A REFRESHER ON FLEX */
+
 #navBar {
-  display: flex;
-  flex-direction: row;
-  margin: 0px 5%;
+    display: flex;
+    flex-direction: row;
+    margin: 0px 5%;
 }
+
 #navBar h1 {
-  width: 25%;
-  font-weight: 500;
+    width: 25%;
+    font-weight: 500;
 }
+
 #navigation {
-  display: flex;
-  width: 50%;
-  align-items: center;
-  justify-content: space-evenly;
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: space-evenly;
 }
+
 #navigation p {
-  cursor: pointer;
-  text-decoration: none;
+    cursor: pointer;
+    text-decoration: none;
 }
+
 .icons {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  width: 25%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 25%;
 }
+
 .icons img {
-  margin: 15px;
-  cursor: pointer;
+    margin: 15px;
+    cursor: pointer;
 }
+
 .highlight {
-  color: #FF6200;
-  font-weight: 700;
+    color: #FF6200;
+    font-weight: 700;
 }
+
 
 /* Typography CSS */
 
 h2 {
-  font-size: 60px;
-  margin: 0px 0px;
-  color: #FF6200;
+    font-size: 60px;
+    margin: 0px 0px;
+    color: #FF6200;
 }
 
 h3 {
-  font-size: 32px;
-  font-weight: 300;
-  margin: 0px 0px;
+    font-size: 32px;
+    font-weight: 300;
+    margin: 0px 0px;
 }
 
 h4 {
-  color: white;
-  font-weight: 400;
-  font-size: 22px;
+    color: white;
+    font-weight: 400;
+    font-size: 22px;
 }
 
-
 #headline p {
-  max-width: 350px;
-  font-size: 16px;
-  font-weight: 300;
-  margin: 0px 0px;
-  color: #636364;
+    max-width: 350px;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0px 0px;
+    color: #636364;
 }
