@@ -1,3 +1,3 @@
-$("#toggle").on("click", function(){
-  $("#dropDown").slideToggle();
+$("#toggle").on("click", function() {
+    $("#dropDown").slideToggle();
 });
